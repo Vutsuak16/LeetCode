@@ -16,3 +16,7 @@ def threeSum(nums):
                     else: r-=1
                
         return lists
+
+
+#natural numbers are sorted
+#we can use search wisely ;)

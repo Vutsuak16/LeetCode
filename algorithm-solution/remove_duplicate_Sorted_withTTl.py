@@ -10,8 +10,6 @@ class Solution(object):
             if nums[start+1]==nums[start]:
                 length-=1
                 nums.remove(nums[start])
-                if start!=0:
-                    start-=1
             else:
                 start+=1
             end=len(nums)-1
