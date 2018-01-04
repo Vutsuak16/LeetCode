@@ -6,12 +6,9 @@ class Solution(object):
         l=map(sorted,l)
         k=[]
         h={}
-        for i in l:
-            string=""
-            for j in i:
-                string+=j
-            k.append(string)
-        print k
+        
+        k=list(map(lambda x : "".join(x),l))
+        
         for i in range(len(k)):
             d=[]
             if k[i] not in h.keys():
@@ -21,5 +18,5 @@ class Solution(object):
                     d.append(strs[j])
             if len(d)!=0:
                 h[k[i]]=d
-                print d
+            
         return h.values()
